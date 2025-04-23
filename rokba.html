@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Firaga Records</title>
-	<meta name="title" content="Firaga Records" />
+	<title>Firaga Records - Rokba</title>
+	<meta name="title" content="Firaga Records - Rokba" />
 	<meta name="description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
 	<meta name="keywords" content="Firaga, vgm edm, video game dance music, house, trance, record label, Firaga Records, video game music" />
 	<meta name="author" content="@salvadorjusaino" />
 	<link rel="canonical" href="https://www.firagarecords.com/">
 	<meta property="fb:app_id" content="2119791744912991">
-	<meta property="og:site_name" content="Firaga Records">
+	<meta property="og:site_name" content="Firaga Records - Rokba">
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.firagarecords.com/" />
 	<meta property="og:title" content="Firaga Records" />
@@ -20,29 +20,31 @@
 	<meta property="og:image:alt" content="Firaga Records" />
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://www.firagarecords.com/" />
-	<meta property="twitter:title" content="Firaga Records" />
+	<meta property="twitter:title" content="Firaga Records - Rokba" />
 	<meta property="twitter:description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
 	<meta property="twitter:image" content="./src/img/thumbnail.png" />
 	<link rel="icon" type="image/svg+xml" href="./src/img/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="./src/css/style.css" />
 </head>
 
-<body class="home loading">
+<body class="artist loading">
 	<header class="header" x-data="{ open: false, toggle() { this.open = ! this.open } }">
 		<div class="header-grid">
 			<div class="ct-inner ct-poligon">
 				<div class="ct-poligon-clip-path">
 					<div class="header-branding">
 						<a class="ct-logo" href="./" rel="home">
-							<img class="ct-logo-img" src="./src/img/logo.svg" width="283" height="52" alt="Firaga Records" />
-							<img class="ct-logo-img-lg" src="./src/img/logo-large.svg" width="283" height="52" alt="Firaga Records" />
+							<img class="ct-logo-img" src="./src/img/logo.svg" width="283" height="52"
+								alt="Firaga Records" />
+							<img class="ct-logo-img-lg" src="./src/img/logo-large.svg" width="283" height="52"
+								alt="Firaga Records" />
 						</a>
 					</div>
 					<div class="header-wrapper">
 						<nav class="ct-nav-main">
 							<ul>
 								<li>
-									<a class="roll roll-active" href="./">
+									<a class="roll" href="./">
 										<span>
 											<span class="translate">
 												<span>HOME</span>
@@ -62,7 +64,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="roll" href="./artists.html">
+									<a class="roll roll-active" href="./artists.html">
 										<span>
 											<span class="translate">
 												<span>ARTISTS</span>
@@ -74,18 +76,19 @@
 							</ul>
 						</nav>
 						<div class="nav-active">
-							<a class="roll roll-active" href="./">
+							<a class="roll roll-active" href="./artists.html">
 								<span>
 									<span class="translate">
-										<span>HOME</span>
-										<span>HOME</span>
+										<span>ARTIST</span>
+										<span>ARTIST</span>
 									</span>
 								</span>
 							</a>
 						</div>
 					</div>
 					<div class="header-button">
-						<button id="burgerIcon" class="button-burger" @click="open = !open" :class="open && 'button-open'">
+						<button id="burgerIcon" class="button-burger" @click="open = !open"
+							:class="open && 'button-open'">
 							<svg width="49" height="20" viewBox="0 0 24 24" fill="none"
 								xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="_pt1_1b1x7_413">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 10h16V9H4v1z" fill="currentColor">
@@ -108,13 +111,14 @@
 	<div class="header__navigation__mobile">
 		<div class="header__navigation__mobile__wrapper">
 			<div class="mobile__wrapper__logo">
-				<a class="ct-logo" href="./" rel="home"><img class="ct-logo-img" src="./src/img/firaga.svg" width="200" height="" alt="Firaga Records" /> </a>
+				<a class="ct-logo" href="./" rel="home"><img class="ct-logo-img" src="./src/img/firaga.svg" width="200"
+						height="" alt="Firaga Records" /> </a>
 			</div>
 			<div class="mobile__wrapper__navigation">
 				<nav class="mobile__wrapper__nav">
 					<ul>
 						<li>
-							<a class="roll roll-active" href="./">
+							<a class="roll" href="./">
 								<span>
 									<span class="translate">
 										<span>HOME</span>
@@ -134,7 +138,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="roll" href="./artists.html">
+							<a class="roll roll-active" href="./artists.html">
 								<span>
 									<span class="translate">
 										<span>ARTISTS</span>
@@ -149,43 +153,136 @@
 		</div>
 	</div>
 	<!-- End Navigation mobile -->
-	
+
 	<main>
-		<section class="hero-intro-text">
+		<section class="hero-intro-text artist-details">
 			<div class="hero-intro-container">
 				<div class="div1 ct-poligon">
 					<div class="ct-poligon-clip-path" data-popover="auto">
-						<h2 class="u--clip w-inline-block">YOUR</h2>
-						<h2 class="u--clip w-inline-block">FAVORITE</h2>
-						<h2 class="u--clip w-inline-block">ELECTRONIC</h2>
-						<h2 class="u--clip w-inline-block">DANCE</h2>
-						<h2 class="u--clip w-inline-block">VIDEO GAME</h2>
-						<h2 class="u--clip w-inline-block">MUSIC</h2>
+						<img src="https://linkstorage.linkfire.com/medialinks/images/880cb1de-05c9-4389-a00d-5bae8020002f/artwork-440x440.jpg" alt="Main Theme (from 'Chrono Trigger') [UK Garage Remix]" fetchpriority="high" />
 					</div>
 				</div>
 				<div class="div2 ct-poligon">
 					<div class="ct-poligon-clip-path" data-popover="auto">
-						<h2 class="u--clip w-inline-block">BY</h2>
-						<h2 class="u--clip w-inline-block">THE</h2>
-						<h2 class="u--clip w-inline-block">BEST</h2>
-						<h2 class="u--clip w-inline-block">REMIXERS</h2>
+						<h2 class="u--clip w-inline-block">ROBKA</h2>
+						<h2 class="u--clip w-inline-block"></h2>
+						<h2 class="u--clip w-inline-block"></h2>
+						<h2 class="u--clip w-inline-block"></h2>
 					</div>
 				</div>
 				<div class="div3">
 					<div class="ct-poligon-clip-path" data-popover="auto">
-						<h2 class="u--clip w-inline-block">FROM THE VIDEO</h2>
-						<h2 class="u--clip w-inline-block">GAME WORLD!</h2>
+						<h2 class="u--clip w-inline-block">PRODUCER,</h2>
+						<h2 class="u--clip w-inline-block">REMIXER</h2>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section class="featured-music">
-			<div class="featured-container">
-				<div class="featured-header">
-					<h2>FEATURED MUSIC</h2>
+		<section class="explore-artist">
+			<div class="explore-artist-container">
+				<div class="explore-artist-info" x-data="{open_bio: false, open_credits: false}">
+					<ul class="artist-info">
+						<li class="artist-info-li ct-poligon-clip-path" :class="open_bio == true && 'is-open'">
+							<div class="artist-info-li-header">
+								<div class="artist-info-li-title">
+									<h2>BIO</h2>
+								</div>
+								<div class="artist-info-li-button">
+									<button type="button" class="button button--stroke" @click="open_bio !== true ? open_bio = true : open_bio = null" :class="open_bio == true && 'is-open'">
+										<div class="button__flair">
+											<div class="button__label">
+												<span>HIDE</span>
+												<span>READ MORE</span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</div>
+							<div class="artist-info-li-container" x-ref="container1" x-bind:style="open_bio == true ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+								<div class="artist-info-container">
+									<p>RoB | Italian transplanted in the UK | he/they |</p>
+									<p>Racing Game Junkie, Professional Ridge Racer, Proficient in Disco, House, and a blend of 90s fast beats and jazzy
+									grooves that he calls Neo-Arcade</p>
+									<p>RoBKTA released music through various channels and labels, including GameChops, DESKPOP and Tiny Waves, as well as
+									finding fertile ground for soundtrack work for videogames like appearing in the Switch port for Crypt Of Necrodancer,
+									scoring the mobile game Super Leap Day and currently working on the upcoming racing game Victory Heat Rally.</p>
+								</div>
+								<div class="artist-info-container-socials">
+									<ul>
+										<li>
+											<a class="button button--stroke" href="https://www.instagram.com/firagarecords/" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>INSTAGRAM</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="https://firagarecords.bandcamp.com/" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>BANDCAMP</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>YOUTUBE</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>BLUESKY</span>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="artist-info-li ct-poligon-clip-path" :class="open_credits == true && 'is-open'">
+							<div class="artist-info-li-header">
+								<div class="artist-info-li-title">
+									<h2>CREDITS</h2>
+								</div>
+								<div class="artist-info-li-button">
+									<button type="button" class="button button--stroke" @click="open_credits !== true ? open_credits = true : open_credits = null"
+										:class="open_credits == true && 'is-open'">
+										<div class="button__flair">
+											<div class="button__label">
+												<span>HIDE</span>
+												<span>READ MORE</span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</div>
+							<div class="artist-info-li-container" x-ref="container2"
+								x-bind:style="open_credits == true ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+								<div class="artist-info-container">
+									<p>RoBKTA has contributed to 18 releases by <a>Materia Collective</a> & <a>Firaga Records</a>.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
-				<div class="featured-wrapper">
+			</div>
+			<div class="explore-artist-container">
+				<div class="explore-artist-header">
+					<h2>DISCOGRAPHY & CREDITS</h2>
+				</div>
+			</div>
+			<div class="explore-artist-container">
+				<div class="archive-music">
 					<div class="grid">
 						<div class="card">
 							<div class="card-container">
@@ -193,16 +290,8 @@
 									<a href="#" title="Main Theme (from Chrono Trigger) [UK Garage Remix]">
 										<h3>Main Theme (from "Chrono Trigger")</h3>
 									</a>
-									<span>BY 
-										<a class="roll roll-active" href="./rokba.html">
-											<span>
-												<span class="translate">
-													<span>ROBKA</span>
-													<span>ROBKA</span>
-												</span>
-											</span>
-										</a>,
-										<a class="roll roll-active" href="./artist.html">
+									<span>BY
+										<a class="roll roll-active" href="/">
 											<span>
 												<span class="translate">
 													<span>FIRAGA</span>
@@ -211,9 +300,6 @@
 											</span>
 										</a>
 									</span>
-								</div>
-								<div class="card-description">
-									<h3>Marketing copy goes here lorem ipsum dolor em.</h3>
 								</div>
 								<div class="card-wrapper">
 									<div class="card-buttons">
@@ -225,18 +311,12 @@
 												</div>
 											</div>
 										</button>
-										<a class="button button--stroke" href="https://firaga.to/ChronoGarage" target="_blank">
-											<div class="button__flair">
-												<div class="button__label">
-													<span>BUY&nbsp;</span>
-													<span>BUY&nbsp;</span>
-												</div>
-											</div>
-										</a>
 									</div>
 									<div class="card-cover">
 										<div class="card-cover-box">
-											<img src="./src/img/thumbnails/0.png" alt="Main Theme (from 'Chrono Trigger') [UK Garage Remix]" fetchpriority="high" />
+											<img src="./src/img/thumbnails/0.png"
+												alt="Main Theme (from 'Chrono Trigger') [UK Garage Remix]"
+												fetchpriority="high" />
 											<div class="wave"></div>
 										</div>
 									</div>
@@ -261,18 +341,11 @@
 												</div>
 											</div>
 										</button>
-										<a class="button button--stroke" href="https://www.firagarecords.com/music/can-you-feel-the-sunshine-from-sonic-r-electronic-version" target="_blank">
-											<div class="button__flair">
-												<div class="button__label">
-													<span>BUY&nbsp;</span>
-													<span>BUY&nbsp;</span>
-												</div>
-											</div>
-										</a>
 									</div>
 									<div class="card-cover">
 										<div class="card-cover-box">
-											<img src="https://linkstorage.linkfire.com/medialinks/images/0b74c7d8-8654-41af-96e5-9e6a0e038a2d/artwork-440x440.jpg" alt="Can You Feel the Sunshine?" />
+											<img src="https://linkstorage.linkfire.com/medialinks/images/0b74c7d8-8654-41af-96e5-9e6a0e038a2d/artwork-440x440.jpg"
+												alt="Can You Feel the Sunshine?" />
 											<div class="wave"></div>
 										</div>
 									</div>
@@ -285,7 +358,7 @@
 									<a href="">
 										<h3>Rave in the Underground</h3>
 									</a>
-									<span>BY Duzzled</span>
+									<span><a href="#">BY FIRAGA</a></span>
 								</div>
 								<div class="card-wrapper">
 									<div class="card-buttons">
@@ -297,18 +370,11 @@
 												</div>
 											</div>
 										</button>
-										<a class="button button--stroke" href="https://firaga.to/ChronoGarage" target="_blank">
-											<div class="button__flair">
-												<div class="button__label">
-													<span>VIEW</span>
-													<span>VIEW</span>
-												</div>
-											</div>
-										</a>
 									</div>
 									<div class="card-cover">
 										<div class="card-cover-box">
-											<img src="https://linkstorage.linkfire.com/medialinks/images/880cb1de-05c9-4389-a00d-5bae8020002f/artwork-440x440.jpg" alt="Rave in the Underground" />
+											<img src="https://linkstorage.linkfire.com/medialinks/images/880cb1de-05c9-4389-a00d-5bae8020002f/artwork-440x440.jpg"
+												alt="Rave in the Underground" />
 											<div class="wave"></div>
 										</div>
 									</div>
@@ -389,14 +455,6 @@
 												</div>
 											</div>
 										</button>
-										<a class="button button--stroke" href="#">
-											<div class="button__flair">
-												<div class="button__label">
-													<span>VIEW</span>
-													<span>VIEW</span>
-												</div>
-											</div>
-										</a>
 									</div>
 									<div class="card-cover">
 										<div class="card-cover-box">
@@ -529,94 +587,190 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="featured-artists">
-			<div class="artists-container">
-				<div class="artists-columns">
-					<div class="artists-column">
-						<div class="artists-header">
-							<h2>FEATURED ARTISTS</h2>
+						<div class="card">
+							<div class="card-container">
+								<div class="card-header">
+									<a href="#" title="Main Theme (from Chrono Trigger) [UK Garage Remix]">
+										<h3>Main Theme (from "Chrono Trigger")</h3>
+									</a>
+									<span>BY
+										<a class="roll roll-active" href="/">
+											<span>
+												<span class="translate">
+													<span>DUZZLED</span>
+													<span>DUZZLED</span>
+												</span>
+											</span>
+										</a>,
+										<a class="roll roll-active" href="/">
+											<span>
+												<span class="translate">
+													<span>FIRAGA</span>
+													<span>FIRAGA</span>
+												</span>
+											</span>
+										</a>
+									</span>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-buttons">
+										<button class="button button--stroke play-button" data-trackId="1">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+									<div class="card-cover">
+										<div class="card-cover-box">
+											<img src="./src/img/thumbnails/0.png"
+												alt="Main Theme (from 'Chrono Trigger') [UK Garage Remix]"
+												fetchpriority="high" />
+											<div class="wave"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="artists-list">
-							<ul>
-								<li class="is-active">
-									<a class="roll roll-active" data-index="0" href="">
-										<span>
-											<span class="translate">
-												<span>Duzzled</span>
-												<span>Duzzled</span>
-											</span>
-										</span>
+						<div class="card">
+							<div class="card-container">
+								<div class="card-header">
+									<a href="" title="Can You Feel the Sunshine? (from Sonic R) Electronic Remix">
+										<h3>Can You Feel the Sunshine?</h3>
 									</a>
-								</li>
-								<li>
-									<a class="roll" data-index="1" href="">
-										<span>
-											<span class="translate">
-												<span>The Icarus Kid</span>
-												<span>The Icarus Kid</span>
-											</span>
-										</span>
-									</a>
-								</li>
-								<li>
-									<a class="roll" data-index="2" href="./artist.html">
-										<span>
-											<span class="translate">
-												<span>RoBKTA</span>
-												<span>RoBKTA</span>
-											</span>
-										</span>
-									</a>
-								</li>
-								<li>
-									<a class="roll" data-index="3" href="">
-										<span>
-											<span class="translate">
-												<span>Tiny Waves</span>
-												<span>Tiny Waves</span>
-											</span>
-										</span>
-									</a>
-								</li>
-								<li>
-									<a class="roll" data-index="4" href="">
-										<span>
-											<span class="translate">
-												<span>Vector U</span>
-												<span>Vector U</span>
-											</span>
-										</span>
-									</a>
-								</li>
-							</ul>
+									<span>BY RoBKTA, Firaga</span>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-buttons">
+										<button class="button button--stroke play-button" data-trackId="2">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+									<div class="card-cover">
+										<div class="card-cover-box">
+											<img src="https://linkstorage.linkfire.com/medialinks/images/0b74c7d8-8654-41af-96e5-9e6a0e038a2d/artwork-440x440.jpg"
+												alt="Can You Feel the Sunshine?" />
+											<div class="wave"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="artists-column">
-						<div class="artists-box-splide">
-							<div class="box-splide-container">
-								<div class="embla">
-									<div class="embla__viewport">
-										<div class="embla__container">
-											<div class="embla__slide">
-												<img class="embla__slide__img" src="https://picsum.photos/600/350?v=1" alt="Your alt text" />
+						<div class="card">
+							<div class="card-container">
+								<div class="card-header">
+									<a href="">
+										<h3>Rave in the Underground</h3>
+									</a>
+									<span>BY Duzzled</span>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-buttons">
+										<button class="button button--stroke play-button" data-trackId="3">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
 											</div>
-											<div class="embla__slide">
-												<img class="embla__slide__img" src="https://picsum.photos/600/350?v=2" alt="Your alt text" />
+										</button>
+									</div>
+									<div class="card-cover">
+										<div class="card-cover-box">
+											<img src="https://linkstorage.linkfire.com/medialinks/images/880cb1de-05c9-4389-a00d-5bae8020002f/artwork-440x440.jpg"
+												alt="Rave in the Underground" />
+											<div class="wave"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-container">
+								<div class="card-header">
+									<a href="">
+										<h3>VGM Essentials: House</h3>
+									</a>
+									<span>BY FIRAGA</span>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-buttons">
+										<button class="button button--stroke play-button" data-trackId="4">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
 											</div>
-											<div class="embla__slide">
-												<img class="embla__slide__img" src="https://picsum.photos/600/350?v=3" alt="Your alt text" />
+										</button>
+									</div>
+									<div class="card-cover">
+										<div class="card-cover-box">
+											<img src="./src/img/thumbnails/4.png" alt="VGM Essentials: House" />
+											<div class="wave"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-container">
+								<div class="card-header">
+									<a href="">
+										<h3>VGM Essentials: House</h3>
+									</a>
+									<span>BY FIRAGA</span>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-buttons">
+										<button class="button button--stroke play-button" data-trackId="5">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
 											</div>
-											<div class="embla__slide">
-												<img class="embla__slide__img" src="https://picsum.photos/600/350?v=4" alt="Your alt text" />
+										</button>
+									</div>
+									<div class="card-cover">
+										<div class="card-cover-box">
+											<img src="./src/img/thumbnails/5.png" alt="VGM Essentials: House" />
+											<div class="wave"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-container">
+								<div class="card-header">
+									<a href="">
+										<h3>VGM Essentials: House</h3>
+									</a>
+									<span>BY FIRAGA</span>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-buttons">
+										<button class="button button--stroke play-button" data-trackId="6">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
 											</div>
-											<div class="embla__slide">
-												<img class="embla__slide__img" src="https://picsum.photos/600/350?v=5" alt="Your alt text" />
-											</div>
+										</button>
+									</div>
+									<div class="card-cover">
+										<div class="card-cover-box">
+											<img src="./src/img/thumbnails/6.png" alt="VGM Essentials: House" />
+											<div class="wave"></div>
 										</div>
 									</div>
 								</div>
@@ -625,12 +779,23 @@
 					</div>
 				</div>
 			</div>
+			<div class="explore-artists-container">
+				<div class="explore-artists-more">
+					<button class="button button--stroke">
+						<div class="button__flair">
+							<div class="button__label">
+								<span>LOAD MORE</span>
+							</div>
+						</div>
+					</button>
+				</div>
+			</div>
 		</section>
 
 		<section class="featured-albums">
 			<div class="featured-container">
 				<div class="featured-header">
-					<h2>FEATURED ALBUMS</h2>
+					<h2>EXPLORE MORE ARTISTS</h2>
 				</div>
 				<div class="featured-wrapper">
 					<div class="embla">
@@ -656,7 +821,7 @@
 												</div>
 											</div>
 											<div class="card-buttons">
-												<button class="button button--stroke play-button" data-trackId="11">
+												<button class="button button--stroke play-button" data-trackId="1">
 													<div class="button__flair">
 														<div class="button__label">
 															<span>PLAY</span>
@@ -667,8 +832,8 @@
 												<a class="button button--stroke" href="#">
 													<div class="button__flair">
 														<div class="button__label">
-															<span>BUY</span>
-															<span>BUY</span>
+															<span>VIEW</span>
+															<span>VIEW</span>
 														</div>
 													</div>
 												</a>
@@ -682,8 +847,7 @@
 											<div class="embla-card-container">
 												<div class="card-cover">
 													<div class="card-cover-box">
-														<img src="./src/img/thumbnails/3.png"
-															alt="VGM Essentials: House">
+														<img src="./src/img/thumbnails/3.png" alt="VGM Essentials: House">
 														<div class="wave"></div>
 													</div>
 												</div>
@@ -697,7 +861,7 @@
 												</div>
 											</div>
 											<div class="card-buttons">
-												<button class="button button--stroke play-button" data-trackId="22">
+												<button class="button button--stroke play-button" data-trackId="2">
 													<div class="button__flair">
 														<div class="button__label">
 															<span>PLAY</span>
@@ -737,7 +901,7 @@
 												</div>
 											</div>
 											<div class="card-buttons">
-												<button class="button button--stroke play-button">
+												<button class="button button--stroke play-button" data-trackId="3">
 													<div class="button__flair">
 														<div class="button__label">
 															<span>PLAY</span>
@@ -942,323 +1106,6 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="addour-albums">	
-			<div class="addour-container">
-				<div class="addour-wrapper">
-					<div class="addour-columns">
-						<div class="addour-column">
-							<div class="addour-header">
-								<h3>SHOP</h3>
-								<h2>ADD OUR ALBUMS TO YOUR COLLECTION.</h2>
-							</div>
-							<div class="addour-description">
-								<a class="button button--stroke button--transparent" href="/">
-									<div class="button__flair">
-										<div class="button__label">
-											<span>SHOP NOW!</span>
-										</div>
-									</div>
-								</a>
-								<p>Remixes hot enough to melt vinyl. Speaking of: our tunes ship on vinyl, CD and MiniDisc. We don’t know either, but y’all wanted it. Pick it up on the Materia Store.</p>
-							</div>
-						</div>
-						<div class="addour-column">
-							<div class="addour-box">
-								<div class="addour-box-container">
-									<h2>DIG
-									THROUGH
-									OUR
-									CRATES</h2>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="featured-playlists">
-			<div class="featured-container">
-				<div class="featured-header">
-					<h2>FEATURED PLAYLISTS</h2>
-				</div>
-				<div class="featured-wrapper">
-					<div class="embla">
-						<div class="embla__viewport">
-							<div class="embla__container">
-								<div class="embla__slide">
-									<div class="embla-album">
-										<div class="embla-card">
-											<div class="embla-card-container">
-												<div class="card-cover">
-													<div class="card-cover-box">
-														<img src="./src/img/thumbnails/8.png" alt="VGM Essentials: House">
-													</div>
-													<a href="#">
-														<div class="addour-box">
-															<div class="addour-box-container">
-																<h2>LISTEN NOW</h2>
-															</div>
-														</div>
-													</a>
-												</div>
-												<div class="card-wrapper">
-													<div class="card-header">
-														<a href="">
-															<h3>VGM Essentials: House</h3>
-														</a>
-														<span>BY FIRAGA</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="embla__slide">
-									<div class="embla-album">
-										<div class="embla-card">
-											<div class="embla-card-container">
-												<div class="card-cover">
-													<div class="card-cover-box">
-														<img src="./src/img/thumbnails/9.png" alt="VGM Essentials: House">
-														<div class="wave"></div>
-													</div>
-													<a href="#">
-														<div class="addour-box">
-															<div class="addour-box-container">
-																<h2>LISTEN NOW</h2>
-															</div>
-														</div>
-													</a>
-												</div>
-												<div class="card-wrapper">
-													<div class="card-header">
-														<a href="">
-															<h3>VGM Essentials: House</h3>
-														</a>
-														<span>BY FIRAGA</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="embla__slide">
-									<div class="embla-album">
-										<div class="embla-card">
-											<div class="embla-card-container">
-												<div class="card-cover">
-													<div class="card-cover-box">
-														<img src="./src/img/thumbnails/10.png" alt="VGM Essentials: House">
-														<div class="wave"></div>
-													</div>
-													<a href="#">
-														<div class="addour-box">
-															<div class="addour-box-container">
-																<h2>LISTEN NOW</h2>
-															</div>
-														</div>
-													</a>
-												</div>
-												<div class="card-wrapper">
-													<div class="card-header">
-														<a href="">
-															<h3>VGM Essentials: House</h3>
-														</a>
-														<span>BY FIRAGA</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="embla__slide">
-									<div class="embla-album">
-										<div class="embla-card">
-											<div class="embla-card-container">
-												<div class="card-cover">
-													<div class="card-cover-box">
-														<img src="./src/img/thumbnails/11.png" alt="VGM Essentials: House">
-														<div class="wave"></div>
-													</div>
-													<a href="#">
-														<div class="addour-box">
-															<div class="addour-box-container">
-																<h2>LISTEN NOW</h2>
-															</div>
-														</div>
-													</a>
-												</div>
-												<div class="card-wrapper">
-													<div class="card-header">
-														<a href="">
-															<h3>VGM Essentials: House</h3>
-														</a>
-														<span>BY FIRAGA</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="embla__slide">
-									<div class="embla-album">
-										<div class="embla-card">
-											<div class="embla-card-container">
-												<div class="card-cover">
-													<div class="card-cover-box">
-														<img src="./src/img/thumbnails/12.png" alt="VGM Essentials: House">
-														<div class="wave"></div>
-													</div>
-													<a href="#">
-														<div class="addour-box">
-															<div class="addour-box-container">
-																<h2>LISTEN NOW</h2>
-															</div>
-														</div>
-													</a>
-												</div>
-												<div class="card-wrapper">
-													<div class="card-header">
-														<a href="">
-															<h3>VGM Essentials: House</h3>
-														</a>
-														<span>BY FIRAGA</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="embla__slide">
-									<div class="embla-album">
-										<div class="embla-card">
-											<div class="embla-card-container">
-												<div class="card-cover">
-													<div class="card-cover-box">
-														<img src="./src/img/thumbnails/8.png" alt="VGM Essentials: House">
-														<div class="wave"></div>
-													</div>
-													<a href="#">
-														<div class="addour-box">
-															<div class="addour-box-container">
-																<h2>LISTEN NOW</h2>
-															</div>
-														</div>
-													</a>
-												</div>
-												<div class="card-wrapper">
-													<div class="card-header">
-														<a href="">
-															<h3>VGM Essentials: House</h3>
-														</a>
-														<span>BY FIRAGA</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="embla__controls">
-							<div class="embla__buttons">
-								<button class="embla__button embla__button--prev" type="button" disabled="">
-									<svg class="embla__button__svg" viewBox="0 0 532 532">
-										<path fill="currentColor"
-											d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z">
-										</path>
-									</svg></button><button class="embla__button embla__button--next" type="button" disabled="">
-									<svg class="embla__button__svg" viewBox="0 0 532 532">
-										<path fill="currentColor"
-											d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z">
-										</path>
-									</svg>
-								</button>
-							</div>
-							<div class="embla__progress">
-								<div class="embla__progress__bar" style="transform:translate3d(0%,0px,0px)"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="join-community">
-			<div class="community-container">
-				<div class="parent">
-					<div class="box">
-						<div class="cube">
-							<div class="cube-poligon">
-								<div class="cube-cover">
-									<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="cube">
-							<div class="cube-poligon">
-								<div class="cube-cover">
-									<img src="./src/img/thumbnails/3.png" alt="VGM Essentials: House" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="cube">
-							<div class="cube-poligon">
-								<div class="cube-cover">
-									<img src="./src/img/thumbnails/4.png" alt="VGM Essentials: House" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="community-intro">
-							<h2>JOIN THE COMMUNITY</h2>
-							<p>Are you an artist pushing the boundaries of EDM and video game-inspired music? Join Firaga Records, the ultimate hub for musicians who fuse electronic beats with the energy of gaming soundtracks.</p>
-							<a class="button button--stroke" href="/">
-								<div class="button__flair">
-									<div class="button__label">
-										<span>JOIN NOW!</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="box">
-						<div class="cube">
-							<div class="cube-poligon">
-								<div class="cube-cover">
-									<img src="./src/img/thumbnails/6.png" alt="VGM Essentials: House" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="cube">
-							<div class="cube-poligon">
-								<div class="cube-cover">
-									<img src="./src/img/thumbnails/7.png" alt="VGM Essentials: House" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="cube">
-							<div class="cube-poligon">
-								<div class="cube-cover">
-									<img src="./src/img/thumbnails/8.png" alt="VGM Essentials: House" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 	</main>
 
 	<footer class="footer">
@@ -1269,7 +1116,7 @@
 						<h2>Subscribe our Newsletter!</h2>
 						<div class="subscribe-box">
 							<form class="subscribe-form">
-								<input id="email" class="subscribe-input" type="email" name="email" autocomplete="email" placeholder="Email Address" />
+								<input class="subscribe-input" type="email" name="email" placeholder="Email Address" />
 								<button class="subscribe-submit roll" type="submit">
 									<span>
 										<span class="translate">
@@ -1286,9 +1133,11 @@
 							<div class="copy-box-container">
 								<h5>OUR HEADQUARTERS</h5>
 								<p>800 5th Avenue Suite 101-707<br />Seattle, Washington, 98104<br />US</p>
-								<p>Materia Music is located on the traditional homelands of the Duwamish Tribe (Dkhw Duw'Absh). We acknowledge and pay our
-								respects to the Duwamish people who have lived on and stewarded these lands since the beginning of time, and continue to
-								do so today.</p>
+								<p>Materia Music is located on the traditional homelands of the Duwamish Tribe (Dkhw
+									Duw'Absh). We acknowledge and pay our
+									respects to the Duwamish people who have lived on and stewarded these lands since
+									the beginning of time, and continue to
+									do so today.</p>
 								<a class="roll" href="https://www.firagarecords.com/legal/imprint" target="_blank">
 									<span>
 										<span class="translate">
@@ -1302,12 +1151,13 @@
 					</div>
 				</div>
 				<div class="footer-column">
-					
+
 					<div class="footer-inquiries">
 						<div class="copy-box">
 							<div class="copy-box-container">
 								<h5>GENERAL INQUIRIES</h5>
-								<a class="button button--stroke" href="mailto:hi@curagarecords.com?subject=Mail from Our Site">
+								<a class="button button--stroke"
+									href="mailto:hi@curagarecords.com?subject=Mail from Our Site">
 									<div class="button__flair">
 										<div class="button__label">
 											<span>hi@curagarecords.com</span>
@@ -1320,7 +1170,8 @@
 									<h5>FOLLOW US</h5>
 									<ul>
 										<li>
-											<a class="button button--stroke" href="https://www.instagram.com/firagarecords/" target="_blank">
+											<a class="button button--stroke"
+												href="https://www.instagram.com/firagarecords/" target="_blank">
 												<div class="button__flair">
 													<div class="button__label">
 														<span>INSTAGRAM</span>
@@ -1329,7 +1180,8 @@
 											</a>
 										</li>
 										<li>
-											<a class="button button--stroke" href="https://firagarecords.bandcamp.com/" target="_blank">
+											<a class="button button--stroke" href="https://firagarecords.bandcamp.com/"
+												target="_blank">
 												<div class="button__flair">
 													<div class="button__label">
 														<span>BANDCAMP</span>
@@ -1396,8 +1248,10 @@
 					<div class="footer-copy">
 						<div class="copy-box">
 							<div class="copy-box-container">
-								<p>Firaga Records is part of <a href="https://www.materiamusic.com/" target="_blank">Materia Music</a>, the premier video game music group.</p>
-								<p>© 2025 MATERIA MUSIC INC. MATERIA®, FIRAGA™, and VGM ESSENTIALS™ are registered trademarks or trademarks of MATERIA MUSIC INC. All rights reserved.</p>
+								<p>Firaga Records is part of <a href="https://www.materiamusic.com/"
+										target="_blank">Materia Music</a>, the premier video game music group.</p>
+								<p>© 2025 MATERIA MUSIC INC. MATERIA®, FIRAGA™, and VGM ESSENTIALS™ are registered
+									trademarks or trademarks of MATERIA MUSIC INC. All rights reserved.</p>
 							</div>
 						</div>
 					</div>
@@ -1450,7 +1304,8 @@
 		</div>
 	</footer>
 
-	<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+		version="1.1">
 		<defs>
 			<filter id="rounded-corners">
 				<feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"></feGaussianBlur>
@@ -1462,94 +1317,117 @@
 	</svg>
 	<svg style="visibility: hidden; position: absolute;" width="71" height="57" viewBox="0 0 71 57" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
-		<path id="rounded-button" d="M58.1732 0.500003C58.8364 0.500003 59.4723 0.763481 59.9412 1.23246L69.768 11.0617C70.2367 11.5305 70.5 12.1663 70.5 12.8293V54C70.5 55.3807 69.3807 56.5 68 56.5L12.8292 56.5C12.1663 56.5 11.5305 56.2367 11.0617 55.768L1.23245 45.9412C0.763478 45.4723 0.5 44.8364 0.5 44.1732V3C0.5 1.61929 1.61929 0.5 3 0.5L58.1732 0.500003Z" stroke="#CFCFCF" />
-	</svg>
-	<svg style="visibility: hidden; position: absolute;" width="124" height="36" viewBox="0 0 124 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path id="rounded-button-footer" d="M114.869 0.5C115.528 0.5 116.16 0.7597 116.628 1.22271L122.258 6.79285C122.733 7.26244 123 7.90242 123 8.57014V33C123 34.3807 121.881 35.5 120.5 35.5H8.63203C7.97388 35.5 7.34228 35.2405 6.87428 34.7777L1.24225 29.209C0.767285 28.7394 0.5 28.0992 0.5 27.4313V3C0.5 1.61929 1.61929 0.5 3 0.5H114.869Z"
-			stroke="#272727" />
-	</svg>
-	<svg style="visibility: hidden; position: absolute;" width="79" height="57" viewBox="0 0 79 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path id="rounded-button-transparent"
-			d="M70.2552 0.5C70.9166 0.5 71.5512 0.762156 72.0197 1.22905L77.7646 6.95322C78.2354 7.42232 78.5 8.05957 78.5 8.72417V54C78.5 55.3807 77.3807 56.5 76 56.5H8.74629C8.08502 56.5 7.45069 56.238 6.98215 55.7714L1.23587 50.0487C0.764803 49.5795 0.5 48.9421 0.5 48.2773V3C0.5 1.61929 1.61929 0.5 3 0.5H70.2552Z"
+		<path id="rounded-button"
+			d="M58.1732 0.500003C58.8364 0.500003 59.4723 0.763481 59.9412 1.23246L69.768 11.0617C70.2367 11.5305 70.5 12.1663 70.5 12.8293V54C70.5 55.3807 69.3807 56.5 68 56.5L12.8292 56.5C12.1663 56.5 11.5305 56.2367 11.0617 55.768L1.23245 45.9412C0.763478 45.4723 0.5 44.8364 0.5 44.1732V3C0.5 1.61929 1.61929 0.5 3 0.5L58.1732 0.500003Z"
 			stroke="#CFCFCF" />
+	</svg>
+	<svg style="visibility: hidden; position: absolute;" width="124" height="36" viewBox="0 0 124 36" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path id="rounded-button-footer"
+			d="M114.869 0.5C115.528 0.5 116.16 0.7597 116.628 1.22271L122.258 6.79285C122.733 7.26244 123 7.90242 123 8.57014V33C123 34.3807 121.881 35.5 120.5 35.5H8.63203C7.97388 35.5 7.34228 35.2405 6.87428 34.7777L1.24225 29.209C0.767285 28.7394 0.5 28.0992 0.5 27.4313V3C0.5 1.61929 1.61929 0.5 3 0.5H114.869Z"
+			stroke="#272727" />
 	</svg>
 
 	<script src="./src/js/plugins.js"></script>
 	<script id="player-data">
 		window.playerData = {
 			tracks: [{
-					"trackId": 1,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"howl": null,
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 2,
-					"track_file": "https://sistema.danzstudio.mx/sounds/running_out",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 3,
-					"track_file": "https://p.scdn.co/mp3-preview/93d269b37a3605ce1637c96b000096a71b8c3bdd?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 4,
-					"track_file": "https://sistema.danzstudio.mx/sounds/80s_vibe",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 5,
-					"track_file": "https://sistema.danzstudio.mx/sounds/rave_digger",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 6,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 7,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 8,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 9,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 10,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 11,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				},
-				{
-					"trackId": 12,
-					"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
-					"genre": "pop",
-					"bpm": 120
-				}]
+				"trackId": 1,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"howl": null,
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 2,
+				"track_file": "https://sistema.danzstudio.mx/sounds/running_out",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 3,
+				"track_file": "https://p.scdn.co/mp3-preview/93d269b37a3605ce1637c96b000096a71b8c3bdd?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 4,
+				"track_file": "https://sistema.danzstudio.mx/sounds/80s_vibe",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 5,
+				"track_file": "https://sistema.danzstudio.mx/sounds/rave_digger",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 6,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 7,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 8,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 9,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 10,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 11,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 12,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 13,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 14,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 15,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 16,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			}]
 		};
 	</script>
 	<script type="module" src="./src/js/index.js"></script>
