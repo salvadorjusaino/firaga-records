@@ -1,4 +1,4 @@
-export class MusicService {
+class MusicService {
 	constructor() {
 		this.data = null;
 		this.tracks = [];
@@ -86,3 +86,5 @@ export class MusicService {
 		);
 	}
 }
+
+export { MusicService };
