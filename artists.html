@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en" class="js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Firaga Records - Artists</title>
+	<meta name="title" content="Firaga Records - Artists" />
+	<meta name="description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
+	<meta name="keywords" content="Firaga, vgm edm, video game dance music, house, trance, record label, Firaga Records, video game music" />
+	<meta name="author" content="@salvadorjusaino" />
+	<link rel="canonical" href="https://www.firagarecords.com/">
+	<meta property="fb:app_id" content="2119791744912991">
+	<meta property="og:site_name" content="Firaga Records">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.firagarecords.com/" />
+	<meta property="og:title" content="Firaga Records - Artists" />
+	<meta property="og:description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
+	<meta property="og:image" content="./src/img/thumbnail.png" />
+	<meta property="og:image:alt" content="Firaga Records" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://www.firagarecords.com/" />
+	<meta property="twitter:title" content="Firaga Records - Artists" />
+	<meta property="twitter:description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
+	<meta property="twitter:image" content="./src/img/thumbnail.png" />
+	<link rel="icon" type="image/svg+xml" href="./src/img/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+</head>
+
+<body class="artists loading">
+	<header class="header" x-data="{ open: false, toggle() { this.open = ! this.open } }">
+		<div class="header-grid">
+			<div class="ct-inner ct-poligon">
+				<div class="ct-poligon-clip-path">
+					<div class="header-branding">
+						<a class="ct-logo" href="./" rel="home">
+							<img class="ct-logo-img" src="./src/img/logo.svg" width="283" height="52"
+								alt="Firaga Records" />
+							<img class="ct-logo-img-lg" src="./src/img/logo-large.svg" width="283" height="52"
+								alt="Firaga Records" />
+						</a>
+					</div>
+					<div class="header-wrapper">
+						<nav class="ct-nav-main">
+							<ul>
+								<li>
+									<a class="roll" href="./">
+										<span>
+											<span class="translate">
+												<span>HOME</span>
+												<span>HOME</span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a class="roll" href="./music.html">
+										<span>
+											<span class="translate">
+												<span>MUSIC</span>
+												<span>MUSIC</span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a class="roll roll-active" href="./artists.html">
+										<span>
+											<span class="translate">
+												<span>ARTISTS</span>
+												<span>ARTISTS</span>
+											</span>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="nav-active">
+							<a class="roll roll-active" href="./music.html">
+								<span>
+									<span class="translate">
+										<span>ARTISTS</span>
+										<span>ARTISTS</span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="header-button">
+						<button id="burgerIcon" class="button-burger" @click="open = !open"
+							:class="open && 'button-open'">
+							<svg width="49" height="20" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="_pt1_1b1x7_413">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 10h16V9H4v1z" fill="currentColor">
+								</path>
+							</svg>
+							<svg width="49" height="20" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="_pt2_1b1x7_414">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 16h16v-1H4v1z" fill="currentColor">
+								</path>
+							</svg>
+						</button>
+					</div>
+					<div id="siri-container" class="siri-container"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Navigation mobile -->
+	<div class="header__navigation__mobile">
+		<div class="header__navigation__mobile__wrapper">
+			<div class="mobile__wrapper__logo">
+				<a class="ct-logo" href="./" rel="home"><img class="ct-logo-img" src="./src/img/firaga.svg" width="200"
+						height="" alt="Firaga Records" /> </a>
+			</div>
+			<div class="mobile__wrapper__navigation">
+				<nav class="mobile__wrapper__nav">
+					<ul>
+						<li>
+							<a class="roll" href="./">
+								<span>
+									<span class="translate">
+										<span>HOME</span>
+										<span>HOME</span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="roll" href="./music.html">
+								<span>
+									<span class="translate">
+										<span>MUSIC</span>
+										<span>MUSIC</span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="roll roll-active" href="./artists.html">
+								<span>
+									<span class="translate">
+										<span>ARTISTS</span>
+										<span>ARTISTS</span>
+									</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- End Navigation mobile -->
+
+	<main>
+		<section class="hero-intro-text our-music">
+			<div class="hero-intro-container">
+				<div class="div1 ct-poligon">
+					<div class="ct-poligon-clip-path" data-popover="auto">
+						<h2 class="u--clip w-inline-block">EXPLORE</h2>
+						<h2 class="u--clip w-inline-block">OUR</h2>
+						<h2 class="u--clip w-inline-block">MUSIC</h2>
+						<h2 class="u--clip w-inline-block">LIBRARY</h2>
+					</div>
+				</div>
+				<div class="div2 ct-poligon">
+					<div class="ct-poligon-clip-path" data-popover="auto">
+						<h2 class="u--clip w-inline-block">EXPLORE</h2>
+						<h2 class="u--clip w-inline-block">OUR</h2>
+						<h2 class="u--clip w-inline-block">MUSIC</h2>
+						<h2 class="u--clip w-inline-block">LIBRARY</h2>
+					</div>
+				</div>
+				<div class="div3">
+					<div class="ct-poligon-clip-path" data-popover="auto">
+						<h2 class="u--clip w-inline-block">EXPLORE OUR</h2>
+						<h2 class="u--clip w-inline-block">MUSIC LIBRARY</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="explore-artists">
+			<div class="explore-artists-container">
+				<div class="explore-artists-header">
+					<h2>EXPLORE OUR ARTISTS</h2>
+				</div>
+			</div>
+			<div class="explore-artists-container">
+				<div class="archive-artists">
+					<div class="grid">
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">ARTIST NAME ARTIST NAME</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>EXPLORE</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">Artist name</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>VIEW</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">Artist name</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>EXPLORE</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">Artist name</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>EXPLORE</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">Artist name</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>EXPLORE</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">Artist name</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>EXPLORE</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">Artist name</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>EXPLORE</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="card card-artist">
+							<div class="card-artist-container">
+								<div class="card-cover">
+									<div class="card-cover-box">
+										<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+									</div>
+								</div>
+								<div class="card-wrapper">
+									<div class="card-header">
+										<a href="">Artist name</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-buttons">
+								<a class="button button--stroke" href="#">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>EXPLORE</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="explore-artists-container">
+				<div class="explore-artists-more">
+					<button class="button button--stroke">
+						<div class="button__flair">
+							<div class="button__label">
+								<span>LOAD MORE</span>
+							</div>
+						</div>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="join-community">
+			<div class="community-container">
+				<div class="parent">
+					<div class="box">
+						<div class="cube">
+							<div class="cube-poligon">
+								<div class="cube-cover">
+									<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="cube">
+							<div class="cube-poligon">
+								<div class="cube-cover">
+									<img src="./src/img/thumbnails/3.png" alt="VGM Essentials: House" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="cube">
+							<div class="cube-poligon">
+								<div class="cube-cover">
+									<img src="./src/img/thumbnails/4.png" alt="VGM Essentials: House" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="community-intro">
+							<h2>JOIN THE COMMUNITY</h2>
+							<p>Are you an artist pushing the boundaries of EDM and video game-inspired music? Join Firaga
+								Records, the ultimate hub for musicians who fuse electronic beats with the energy of gaming
+								soundtracks.</p>
+							<a class="button button--stroke" href="/">
+								<div class="button__flair">
+									<div class="button__label">
+										<span>JOIN NOW!</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="cube">
+							<div class="cube-poligon">
+								<div class="cube-cover">
+									<img src="./src/img/thumbnails/6.png" alt="VGM Essentials: House" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="cube">
+							<div class="cube-poligon">
+								<div class="cube-cover">
+									<img src="./src/img/thumbnails/7.png" alt="VGM Essentials: House" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="cube">
+							<div class="cube-poligon">
+								<div class="cube-cover">
+									<img src="./src/img/thumbnails/8.png" alt="VGM Essentials: House" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-columns">
+				<div class="footer-column">
+					<div class="subscribe">
+						<h2>Subscribe our Newsletter!</h2>
+						<div class="subscribe-box">
+							<form class="subscribe-form">
+								<input class="subscribe-input" type="email" name="email" placeholder="Email Address" />
+								<button class="subscribe-submit roll" type="submit">
+									<span>
+										<span class="translate">
+											<span>Submit</span>
+											<span>Submit</span>
+										</span>
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer-copy">
+						<div class="copy-box">
+							<div class="copy-box-container">
+								<h5>OUR HEADQUARTERS</h5>
+								<p>800 5th Avenue Suite 101-707<br />Seattle, Washington, 98104<br />US</p>
+								<p>Materia Music is located on the traditional homelands of the Duwamish Tribe (Dkhw
+									Duw'Absh). We acknowledge and pay our
+									respects to the Duwamish people who have lived on and stewarded these lands since
+									the beginning of time, and continue to
+									do so today.</p>
+								<a class="roll" href="https://www.firagarecords.com/legal/imprint" target="_blank">
+									<span>
+										<span class="translate">
+											<span>Imprint/Impressum</span>
+											<span>Imprint/Impressum</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-column">
+
+					<div class="footer-inquiries">
+						<div class="copy-box">
+							<div class="copy-box-container">
+								<h5>GENERAL INQUIRIES</h5>
+								<a class="button button--stroke"
+									href="mailto:hi@curagarecords.com?subject=Mail from Our Site">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>hi@curagarecords.com</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="copy-columns">
+								<div class="column">
+									<h5>FOLLOW US</h5>
+									<ul>
+										<li>
+											<a class="button button--stroke"
+												href="https://www.instagram.com/firagarecords/" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>INSTAGRAM</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="https://firagarecords.bandcamp.com/"
+												target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>BANDCAMP</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>YOUTUBE</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>BLUESKY</span>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<h5>FOLLOW US</h5>
+									<ul>
+										<li>
+											<a class="button button--stroke" href="./">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>HOME</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="./music">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>LIBRARY</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="./artists">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>ARTISTS</span>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-copy">
+						<div class="copy-box">
+							<div class="copy-box-container">
+								<p>Firaga Records is part of <a href="https://www.materiamusic.com/"
+										target="_blank">Materia Music</a>, the premier video game music group.</p>
+								<p>© 2025 MATERIA MUSIC INC. MATERIA®, FIRAGA™, and VGM ESSENTIALS™ are registered
+									trademarks or trademarks of MATERIA MUSIC INC. All rights reserved.</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-menu">
+						<ul>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/copyright_policy">
+									<span>
+										<span class="translate">
+											<span>Copyright Policy</span>
+											<span>Copyright Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/privacy_policy">
+									<span>
+										<span class="translate">
+											<span>Privacy Policy</span>
+											<span>Privacy Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/cookie_policy">
+									<span>
+										<span class="translate">
+											<span>Cookie Policy</span>
+											<span>Cookie Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/ai_policy">
+									<span>
+										<span class="translate">
+											<span>AI Policy</span>
+											<span>AI Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+		version="1.1">
+		<defs>
+			<filter id="rounded-corners">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"></feGaussianBlur>
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+					result="flt_tag"></feColorMatrix>
+				<feComposite in="SourceGraphic" in2="flt_tag" operator="atop"></feComposite>
+			</filter>
+		</defs>
+	</svg>
+	<svg style="visibility: hidden; position: absolute;" width="71" height="57" viewBox="0 0 71 57" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path id="rounded-button"
+			d="M58.1732 0.500003C58.8364 0.500003 59.4723 0.763481 59.9412 1.23246L69.768 11.0617C70.2367 11.5305 70.5 12.1663 70.5 12.8293V54C70.5 55.3807 69.3807 56.5 68 56.5L12.8292 56.5C12.1663 56.5 11.5305 56.2367 11.0617 55.768L1.23245 45.9412C0.763478 45.4723 0.5 44.8364 0.5 44.1732V3C0.5 1.61929 1.61929 0.5 3 0.5L58.1732 0.500003Z"
+			stroke="#CFCFCF" />
+	</svg>
+	<svg style="visibility: hidden; position: absolute;" width="124" height="36" viewBox="0 0 124 36" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path id="rounded-button-footer"
+			d="M114.869 0.5C115.528 0.5 116.16 0.7597 116.628 1.22271L122.258 6.79285C122.733 7.26244 123 7.90242 123 8.57014V33C123 34.3807 121.881 35.5 120.5 35.5H8.63203C7.97388 35.5 7.34228 35.2405 6.87428 34.7777L1.24225 29.209C0.767285 28.7394 0.5 28.0992 0.5 27.4313V3C0.5 1.61929 1.61929 0.5 3 0.5H114.869Z"
+			stroke="#272727" />
+	</svg>
+
+	<script src="./src/js/plugins.js"></script>
+	<script type="module" src="./src/js/index.js"></script>
+</body>
+
+</html>
