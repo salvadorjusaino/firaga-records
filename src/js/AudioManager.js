@@ -54,7 +54,7 @@ export default class AudioManager {
 	}
 
 	toggleAudio = () => {
-		if (audio.isPlaying()) {
+		if (this.audio.isPlaying()) {
 			this.audio.pause();
 		} else {
 			this.audio.play();

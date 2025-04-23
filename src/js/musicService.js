@@ -1,4 +1,4 @@
-export class musicService {
+export class MusicService {
 	constructor() {
 		this.data = null;
 		this.tracks = [];

@@ -4,7 +4,7 @@ import { preloadImages } from "./Utils.js";
 import { Loader } from "./Loader.js";
 import { Scroll } from "./Scroll.js";
 import { Player } from "./Player.js";
-import { musicService } from './musicService.js';
+import { MusicService } from "./MusicService.js";
 
 let mm = gsap.matchMedia();
 let imgLoaded = false,
@@ -15,7 +15,7 @@ export default class Index {
 	constructor() {
 		gsap.registerPlugin(ScrollTrigger);
 
-		this.service = new musicService();
+		this.service = new MusicService();
 		this.siteReady = false;
 		this.animate = false;
 		this.animateMobile = false;
@@ -365,7 +365,7 @@ export default class Index {
 			
 			buttons.forEach((button) => {
 
-				if (!button.hasAttribute('data-trackid')) {
+				if (!button.hasAttribute('data-trackId')) {
 					button.classList.add("is-disabled");
 					button.closest(".card").classList.add("not-wave");
 					button.disabled = true;
@@ -374,7 +374,7 @@ export default class Index {
 				button.addEventListener("click", (e) => {
 					e.preventDefault();
 					let card = e.target.closest(".card");
-					let trackId = parseInt(e.target.getAttribute("data-trackid"));
+					let trackId = parseInt(e.target.getAttribute("data-trackId"));
 
 					if (!trackId) {
 						return false;
