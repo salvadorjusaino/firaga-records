@@ -420,23 +420,6 @@ export default class Index {
 					}
 				});
 			});
-
-			const album = document.querySelector(".album");
-			
-			if (album) {
-
-				const button = album.querySelector(".play-button");
-				const tracklist = document.querySelector(".album-tracklist-list");
-				const trackFirstChild = tracklist.querySelector(".album-track:first-child");
-
-				button.addEventListener("click", (e) => {
-					e.preventDefault();
-					if (trackFirstChild) {
-						const play = trackFirstChild.querySelector(".play-button");
-						play.click();
-					}
-				});
-			}
 		}
 
 	};
