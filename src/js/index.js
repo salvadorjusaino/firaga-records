@@ -404,7 +404,7 @@ export default class Index {
 								}
 
 								element.classList.remove("is-playing");
-								
+
 							}
 						});
 
@@ -418,9 +418,6 @@ export default class Index {
 							this.player.pause();
 						}
 					}
-
-
-					e.stopPropagation();
 				});
 			});
 		}
