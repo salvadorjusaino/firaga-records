@@ -1,0 +1,1381 @@
+<!doctype html>
+<html lang="en" class="js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Firaga Records - Artist</title>
+	<meta name="title" content="Firaga Records - Artist" />
+	<meta name="description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
+	<meta name="keywords" content="Firaga, vgm edm, video game dance music, house, trance, record label, Firaga Records, video game music" />
+	<meta name="author" content="@salvadorjusaino" />
+	<link rel="canonical" href="https://www.firagarecords.com/">
+	<meta property="fb:app_id" content="2119791744912991">
+	<meta property="og:site_name" content="Firaga Records - Artist">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.firagarecords.com/" />
+	<meta property="og:title" content="Firaga Records" />
+	<meta property="og:description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
+	<meta property="og:image" content="./src/img/thumbnail.png" />
+	<meta property="og:image:alt" content="Firaga Records" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://www.firagarecords.com/" />
+	<meta property="twitter:title" content="Firaga Records - Artist" />
+	<meta property="twitter:description" content="Firaga Records releases high quality Electronic Dance video game music covers" />
+	<meta property="twitter:image" content="./src/img/thumbnail.png" />
+	<link rel="icon" type="image/svg+xml" href="./src/img/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+</head>
+
+<body class="loading">
+	<header class="header" x-data="{ open: false, toggle() { this.open = ! this.open } }">
+		<div class="header-grid">
+			<div class="ct-inner ct-poligon">
+				<div class="ct-poligon-clip-path">
+					<div class="header-branding">
+						<a class="ct-logo" href="./" rel="home">
+							<img class="ct-logo-img" src="./src/img/logo.svg" width="283" height="52"
+								alt="Firaga Records" />
+							<img class="ct-logo-img-lg" src="./src/img/logo-large.svg" width="283" height="52"
+								alt="Firaga Records" />
+						</a>
+					</div>
+					<div class="header-wrapper">
+						<nav class="ct-nav-main">
+							<ul>
+								<li>
+									<a class="roll" href="./">
+										<span>
+											<span class="translate">
+												<span>HOME</span>
+												<span>HOME</span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a class="roll" href="./music.html">
+										<span>
+											<span class="translate">
+												<span>MUSIC</span>
+												<span>MUSIC</span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a class="roll roll-active" href="./artists.html">
+										<span>
+											<span class="translate">
+												<span>ARTISTS</span>
+												<span>ARTISTS</span>
+											</span>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="nav-active">
+							<a class="roll roll-active" href="./artists.html">
+								<span>
+									<span class="translate">
+										<span>ARTIST</span>
+										<span>ARTIST</span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="header-button">
+						<button id="burgerIcon" class="button-burger" @click="open = !open"
+							:class="open && 'button-open'">
+							<svg width="49" height="20" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="_pt1_1b1x7_413">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 10h16V9H4v1z" fill="currentColor">
+								</path>
+							</svg>
+							<svg width="49" height="20" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="_pt2_1b1x7_414">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 16h16v-1H4v1z" fill="currentColor">
+								</path>
+							</svg>
+						</button>
+					</div>
+					<div id="siri-container" class="siri-container"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Navigation mobile -->
+	<div class="header__navigation__mobile">
+		<div class="header__navigation__mobile__wrapper">
+			<div class="mobile__wrapper__logo">
+				<a class="ct-logo" href="./" rel="home"><img class="ct-logo-img" src="./src/img/firaga.svg" width="200"
+						height="" alt="Firaga Records" /> </a>
+			</div>
+			<div class="mobile__wrapper__navigation">
+				<nav class="mobile__wrapper__nav">
+					<ul>
+						<li>
+							<a class="roll" href="./">
+								<span>
+									<span class="translate">
+										<span>HOME</span>
+										<span>HOME</span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="roll" href="./music.html">
+								<span>
+									<span class="translate">
+										<span>MUSIC</span>
+										<span>MUSIC</span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="roll roll-active" href="./artists.html">
+								<span>
+									<span class="translate">
+										<span>ARTISTS</span>
+										<span>ARTISTS</span>
+									</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- End Navigation mobile -->
+
+	<main>
+		<section class="album">
+			<div class="album__container album__container--clipped">
+				<div class="album__columns">
+					<div class="album__column">
+						<div class="album__cover">
+							<img class="album__image" src="./src/img/thumbnails/0.png" alt="Main Theme (from 'Chrono Trigger') [UK Garage Remix]" fetchpriority="high" />
+						</div>
+					</div>
+					<div class="album__column">
+						<div class="album__info">
+							<div class="album__info-header">
+								<h3 class="album__subtitle">ALBUM</h3>
+								<h1 class="album__title">VGM Essentials: House</h1>
+								<h2 class="album__artist">BY FIRAGA</h2>
+							</div>
+							<div class="album__info-description">
+								<p class="album__info-text">15 TRACKS</p>
+								<p class="album__info-text">63 MINUTES</p>
+								<p class="album__info-text">NOVEMBER 01, 2024</p>
+							</div>
+							<div class="album__info-buttons track">
+								<button class="button button--stroke play-button" data-trackId="1">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>PLAY</span>
+											<span>STOP</span>
+										</div>
+									</div>
+								</button>
+								<a class="button button--stroke" href="./music.html">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>BUY NOW</span>
+											<span>BUY NOW</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="album-details">
+			<div class="album-details__container">
+				<div class="album-details__columns" x-data="{open_bio: false, open_credits: false}">
+					<div class="album-details__column">
+						<div class="album-details__clipped">
+							<div class="album-details__clipped_header">
+								<div class="album-details__heading">
+									<h2 class="album-details__heading">DESCRIPTION</h2>
+								</div>
+								<div class="album-details__button">
+									<button type="button" class="button button--stroke" @click="open_bio !== true ? open_bio = true : open_bio = null" :class="open_bio == true && 'is-open'">
+										<div class="button__flair">
+											<div class="button__label">
+												<span>HIDE</span>
+												<span>READ MORE</span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</div>
+							<div class="album-details__info" x-ref="container1" x-bind:style="open_bio == true ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+								<div class="album-details__text">
+									<p>Firaga Records teams up with multi-genre net-label Novatone, bringing the first volume of the VGM Genre Series - VGM Essentials: House. A collection of 15 dance floor ready house remixes from video games such as Pokemon, Sonic, Super Mario, Chrono Trigger, Kirby, Hollow Knight, Yume Nikki, and more!</p>
+									<p>With remixes by floopy, RoboRob & DeBisco, Arcarine, NoteBlock, Wontolla, RoBKTA,  PrototypeRaptor, Theology & DJ Dark Prime, nokbient, Galaxian, and more - this album showcases a  variety of house genres from Electro, Tech House, Bass House, and Disco! VGM Essentials: House is a must listen for gamers and music fans alike!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="album-details__column">
+						<div class="album-details__clipped">
+							<div class="album-details__clipped_header">
+								<div class="album-details__heading">
+									<h2 class="album-details__heading">CREDITS</h2>
+								</div>
+								<div class="album-details__button">
+									<button type="button" class="button button--stroke" @click="open_credits !== true ? open_credits = true : open_credits = null" :class="open_credits == true && 'is-open'">
+										<div class="button__flair">
+											<div class="button__label">
+												<span>HIDE</span>
+												<span>READ MORE</span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</div>
+							<div class="album-details__info" x-ref="container2"
+								x-bind:style="open_credits == true ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+								<div class="album-details__text">
+									<ul class="album-details__credits-list">
+										<li class="album-details__credit">Produced by: Firaga Records</li>
+										<li class="album-details__credit">Mixed by: John Doe</li>
+										<li class="album-details__credit">Mastered by: Jane Smith</li>
+										<li class="album-details__credit">Artwork by: PixelArt Studio</li>
+									</ul>
+									<div class="album-details__text-small">
+										<p>℗ 2024 Firaga Records / Novatone / Materia Music Inc.</p>
+										<p>© 2024 Firaga Records / Novatone / Materia Music Inc.</p>
+									</div>
+									<div class="album-details__text-small">
+										<p>Games are © their respective owners. Firaga Records, Materia Music Inc., and collaborating artists are in no way
+										affiliated, associated, authorized, endorsed by, or in any way officially connected to the game developers or publishers
+										with respect to this album. Musical compositions are used with permission. Sound Recordings © 2024 Materia Music Inc.
+										FIRAGA and VGM ESSENTIALS are trademarks or registered trademarks of MATERIA MUSIC INC. All Rights Reserved.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="album-tracklist">
+			<div class="album-tracklist__container album__tracklist--clipped">
+				<div class="album-tracklist__header">
+					<h2 class="album-tracklist__heading">TRACKLIST</h2>
+				</div>
+				<ul class="album-tracklist-list">
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="1">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">01</div>
+										<div class="album-track__title">Can You Feel the Sunshine? (from "Sonic R") (Electronic Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA feat. Tiggs</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="2">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">02</div>
+										<div class="album-track__title">Fortress of Lies (from "NieR:Automata") (Electronic Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="3">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">03</div>
+										<div class="album-track__title">Sky High 202X (from "Daytona USA") (House Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="4">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">04</div>
+										<div class="album-track__title">Eddy's Stage (from "Tekken Tag Tournament") (Techno Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA feat. Tiggs</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="5">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">05</div>
+										<div class="album-track__title">Warpa Fruit (from "Crash Bandicoot 3: Warped") (Breakbeat Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="6">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">06</div>
+										<div class="album-track__title">Splash Wave (from "Out Run") (Electronic Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="7">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">07</div>
+										<div class="album-track__title">Infinity Mijinion (from "Mega Man X6") (Techno Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="8">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">08</div>
+										<div class="album-track__title">Anarchy Ignition (from "SEGA Rally Championship") (House Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="9">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">09</div>
+										<div class="album-track__title">Dire, Dire Docks (from "Super Mario 64") (Electronic Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="album-track track">
+						<div class="album-track__container">
+							<div class="album-track__columns">
+								<div class="album-track__column">
+									<div class="album-track__button">
+										<button class="button button--stroke play-button" data-trackId="10">
+											<div class="button__flair">
+												<div class="button__label">
+													<span>PLAY</span>
+													<span>STOP</span>
+												</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="album-track__column">
+									<div class="album-track__info">
+										<div class="album-track__number">10</div>
+										<div class="album-track__title">Simple and Clean (from "KINGDOM HEARTS") (Electronic Version)</div>
+									</div>
+									<div class="album-track__artist">
+										<h3 class="album-track__subtitle">RoBKTA</h3>
+										<div class="album-track__encore">
+											<span>2:53</span>
+											<span>120 BPM</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="album-tracklist__notice">
+					<p>Notice regarding cover songs: Firaga Records takes great care to ensure that all cover song recordings are licensed and in full compliance with applicable laws. As the leader and innovator of video game cover songs, its parent company Materia Music oversees mechanical licensing and royalty remittance directly with many rights holders, music publishers, and administrators. If you are a rights holder or an Interested Party to a relevant copyright and have  questions, please contact our team at licensing@materiamusic.com.</p>
+				</div>
+			</div>
+		</section>
+		<section class="featured-playlists our-merch">
+			<div class="featured-container">
+				<div class="featured-header">
+					<h2>EXPLORE OUR MERCH</h2>
+				</div>
+				<div class="featured-wrapper">
+					<div class="embla">
+						<div class="embla__viewport">
+							<div class="embla__container">
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/merch.png" alt="VGM Essentials: House" />
+													</div>
+													<a href="#">
+														<div class="addour-box">
+															<div class="addour-box-container">
+																<h2>ADD TO CART</h2>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/merch.png" alt="VGM Essentials: House" />
+													</div>
+													<a href="#">
+														<div class="addour-box">
+															<div class="addour-box-container">
+																<h2>ADD TO CART</h2>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/merch.png" alt="VGM Essentials: House" />
+													</div>
+													<a href="#">
+														<div class="addour-box">
+															<div class="addour-box-container">
+																<h2>ADD TO CART</h2>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/merch.png" alt="VGM Essentials: House" />
+													</div>
+													<a href="#">
+														<div class="addour-box">
+															<div class="addour-box-container">
+																<h2>ADD TO CART</h2>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/merch.png" alt="VGM Essentials: House" />
+													</div>
+													<a href="#">
+														<div class="addour-box">
+															<div class="addour-box-container">
+																<h2>ADD TO CART</h2>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/merch.png" alt="VGM Essentials: House" />
+													</div>
+													<a href="#">
+														<div class="addour-box">
+															<div class="addour-box-container">
+																<h2>ADD TO CART</h2>
+															</div>
+														</div>
+													</a>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="embla__controls">
+							<div class="embla__buttons">
+								<button class="embla__button embla__button--prev" type="button" disabled="">
+									<svg class="embla__button__svg" viewBox="0 0 532 532">
+										<path fill="currentColor"
+											d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z">
+										</path>
+									</svg></button><button class="embla__button embla__button--next" type="button" disabled="">
+									<svg class="embla__button__svg" viewBox="0 0 532 532">
+										<path fill="currentColor"
+											d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z">
+										</path>
+									</svg>
+								</button>
+							</div>
+							<div class="embla__progress">
+								<div class="embla__progress__bar" style="transform:translate3d(0%,0px,0px)"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="featured-albums more-music">
+			<div class="featured-container">
+				<div class="featured-header">
+					<h2>EXPLORE MORE MUSIC</h2>
+				</div>
+				<div class="featured-wrapper">
+					<div class="embla">
+						<div class="embla__viewport">
+							<div class="embla__container">
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/thumbnails/2.png" alt="VGM Essentials: House">
+														<div class="wave"></div>
+													</div>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-buttons">
+												<button class="button button--stroke play-button" data-trackId="1">
+													<div class="button__flair">
+														<div class="button__label">
+															<span>PLAY</span>
+															<span>STOP</span>
+														</div>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/thumbnails/3.png" alt="VGM Essentials: House">
+														<div class="wave"></div>
+													</div>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-buttons">
+												<button class="button button--stroke play-button" data-trackId="2">
+													<div class="button__flair">
+														<div class="button__label">
+															<span>PLAY</span>
+															<span>STOP</span>
+														</div>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/thumbnails/4.png" alt="VGM Essentials: House">
+														<div class="wave"></div>
+													</div>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-buttons">
+												<button class="button button--stroke play-button" data-trackId="3">
+													<div class="button__flair">
+														<div class="button__label">
+															<span>PLAY</span>
+															<span>STOP</span>
+														</div>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/thumbnails/5.png" alt="VGM Essentials: House">
+														<div class="wave"></div>
+													</div>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-buttons">
+												<button class="button button--stroke play-button">
+													<div class="button__flair">
+														<div class="button__label">
+															<span>PLAY</span>
+															<span>STOP</span>
+														</div>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/thumbnails/12.png" alt="VGM Essentials: House">
+														<div class="wave"></div>
+													</div>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-buttons">
+												<button class="button button--stroke play-button">
+													<div class="button__flair">
+														<div class="button__label">
+															<span>PLAY</span>
+															<span>STOP</span>
+														</div>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/thumbnails/8.png" alt="VGM Essentials: House">
+														<div class="wave"></div>
+													</div>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-buttons">
+												<button class="button button--stroke play-button">
+													<div class="button__flair">
+														<div class="button__label">
+															<span>PLAY</span>
+															<span>STOP</span>
+														</div>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="embla__slide">
+									<div class="embla-album">
+										<div class="embla-card card">
+											<div class="embla-card-container">
+												<div class="card-cover">
+													<div class="card-cover-box">
+														<img src="./src/img/thumbnails/9.png" alt="VGM Essentials: House">
+														<div class="wave"></div>
+													</div>
+												</div>
+												<div class="card-wrapper">
+													<div class="card-header">
+														<a href="">
+															<h3>VGM Essentials: House</h3>
+														</a>
+														<span>BY FIRAGA</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-buttons">
+												<button class="button button--stroke play-button">
+													<div class="button__flair">
+														<div class="button__label">
+															<span>PLAY</span>
+															<span>STOP</span>
+														</div>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="embla__controls">
+							<div class="embla__buttons">
+								<button class="embla__button embla__button--prev" type="button" disabled="">
+									<svg class="embla__button__svg" viewBox="0 0 532 532">
+										<path fill="currentColor"
+											d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z">
+										</path>
+									</svg></button><button class="embla__button embla__button--next" type="button" disabled="">
+									<svg class="embla__button__svg" viewBox="0 0 532 532">
+										<path fill="currentColor"
+											d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z">
+										</path>
+									</svg>
+								</button>
+							</div>
+							<div class="embla__progress">
+								<div class="embla__progress__bar" style="transform:translate3d(0%,0px,0px)"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-columns">
+				<div class="footer-column">
+					<div class="subscribe">
+						<h2>Subscribe our Newsletter!</h2>
+						<div class="subscribe-box">
+							<form class="subscribe-form">
+								<input class="subscribe-input" type="email" name="email" placeholder="Email Address" />
+								<button class="subscribe-submit roll" type="submit">
+									<span>
+										<span class="translate">
+											<span>Submit</span>
+											<span>Submit</span>
+										</span>
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer-copy">
+						<div class="copy-box">
+							<div class="copy-box-container">
+								<h5>OUR HEADQUARTERS</h5>
+								<p>800 5th Avenue Suite 101-707<br />Seattle, Washington, 98104<br />US</p>
+								<p>Materia Music is located on the traditional homelands of the Duwamish Tribe (Dkhw
+									Duw'Absh). We acknowledge and pay our
+									respects to the Duwamish people who have lived on and stewarded these lands since
+									the beginning of time, and continue to
+									do so today.</p>
+								<a class="roll" href="https://www.firagarecords.com/legal/imprint" target="_blank">
+									<span>
+										<span class="translate">
+											<span>Imprint/Impressum</span>
+											<span>Imprint/Impressum</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-column">
+
+					<div class="footer-inquiries">
+						<div class="copy-box">
+							<div class="copy-box-container">
+								<h5>GENERAL INQUIRIES</h5>
+								<a class="button button--stroke"
+									href="mailto:hi@curagarecords.com?subject=Mail from Our Site">
+									<div class="button__flair">
+										<div class="button__label">
+											<span>hi@curagarecords.com</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="copy-columns">
+								<div class="column">
+									<h5>FOLLOW US</h5>
+									<ul>
+										<li>
+											<a class="button button--stroke"
+												href="https://www.instagram.com/firagarecords/" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>INSTAGRAM</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="https://firagarecords.bandcamp.com/"
+												target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>BANDCAMP</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>YOUTUBE</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="" target="_blank">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>BLUESKY</span>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<h5>FOLLOW US</h5>
+									<ul>
+										<li>
+											<a class="button button--stroke" href="./">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>HOME</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="./music">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>LIBRARY</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="button button--stroke" href="./artists">
+												<div class="button__flair">
+													<div class="button__label">
+														<span>ARTISTS</span>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-copy">
+						<div class="copy-box">
+							<div class="copy-box-container">
+								<p>Firaga Records is part of <a href="https://www.materiamusic.com/"
+										target="_blank">Materia Music</a>, the premier video game music group.</p>
+								<p>© 2025 MATERIA MUSIC INC. MATERIA®, FIRAGA™, and VGM ESSENTIALS™ are registered
+									trademarks or trademarks of MATERIA MUSIC INC. All rights reserved.</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-menu">
+						<ul>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/copyright_policy">
+									<span>
+										<span class="translate">
+											<span>Copyright Policy</span>
+											<span>Copyright Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/privacy_policy">
+									<span>
+										<span class="translate">
+											<span>Privacy Policy</span>
+											<span>Privacy Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/cookie_policy">
+									<span>
+										<span class="translate">
+											<span>Cookie Policy</span>
+											<span>Cookie Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a class="roll" href="https://www.firagarecords.com/legal/ai_policy">
+									<span>
+										<span class="translate">
+											<span>AI Policy</span>
+											<span>AI Policy</span>
+										</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+		version="1.1">
+		<defs>
+			<filter id="rounded-corners">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"></feGaussianBlur>
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+					result="flt_tag"></feColorMatrix>
+				<feComposite in="SourceGraphic" in2="flt_tag" operator="atop"></feComposite>
+			</filter>
+		</defs>
+	</svg>
+	<svg style="visibility: hidden; position: absolute;" width="71" height="57" viewBox="0 0 71 57" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path id="rounded-button"
+			d="M58.1732 0.500003C58.8364 0.500003 59.4723 0.763481 59.9412 1.23246L69.768 11.0617C70.2367 11.5305 70.5 12.1663 70.5 12.8293V54C70.5 55.3807 69.3807 56.5 68 56.5L12.8292 56.5C12.1663 56.5 11.5305 56.2367 11.0617 55.768L1.23245 45.9412C0.763478 45.4723 0.5 44.8364 0.5 44.1732V3C0.5 1.61929 1.61929 0.5 3 0.5L58.1732 0.500003Z"
+			stroke="#CFCFCF" />
+	</svg>
+	<svg style="visibility: hidden; position: absolute;" width="124" height="36" viewBox="0 0 124 36" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path id="rounded-button-footer"
+			d="M114.869 0.5C115.528 0.5 116.16 0.7597 116.628 1.22271L122.258 6.79285C122.733 7.26244 123 7.90242 123 8.57014V33C123 34.3807 121.881 35.5 120.5 35.5H8.63203C7.97388 35.5 7.34228 35.2405 6.87428 34.7777L1.24225 29.209C0.767285 28.7394 0.5 28.0992 0.5 27.4313V3C0.5 1.61929 1.61929 0.5 3 0.5H114.869Z"
+			stroke="#272727" />
+	</svg>
+
+	<script src="./src/js/plugins.js"></script>
+	<script id="player-data">
+		window.playerData = {
+			tracks: [{
+				"trackId": 1,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"howl": null,
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 2,
+				"track_file": "https://sistema.danzstudio.mx/sounds/80s_vibe",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 3,
+				"track_file": "https://sistema.danzstudio.mx/sounds/running_out",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 4,
+				"track_file": "https://p.scdn.co/mp3-preview/93d269b37a3605ce1637c96b000096a71b8c3bdd?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 5,
+				"track_file": "https://sistema.danzstudio.mx/sounds/rave_digger",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 6,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 7,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 8,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 9,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 10,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 11,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 12,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 13,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 14,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 15,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			},
+			{
+				"trackId": 16,
+				"track_file": "https://p.scdn.co/mp3-preview/cc5068bb26c1e571873b34d5e87ecb441058fc31?cid=18fc7b00a64d447393f6ee0dd98a70be",
+				"genre": "pop",
+				"bpm": 120
+			}]
+		};
+	</script>
+	<script type="module" src="./src/js/index.js"></script>
+</body>
+
+</html>

@@ -10,6 +10,8 @@ class Player {
 	constructor(playlist) {
 
 		this.waveContainer = null;
+		this.button = null;
+		this.isAlbum = false;
 		this.isPlaying = false;
 		this.playlist = playlist || [];
 		this.trackId = 0;
@@ -80,6 +82,8 @@ class Player {
 		var self = this;
 		var sound;
 		var index = self.index;
+		
+		self.button = document.querySelector(".play-button[data-trackid='" + trackId + "']");
 
 		//var data = self.playlist[index];
 		
@@ -88,8 +92,7 @@ class Player {
 
 		if (data) {
 			index = data.index;
-
-
+			this.index = index;
 			data = data.track;
 		}
 
@@ -100,8 +103,8 @@ class Player {
 		} else {
 
 			if (!data) {
-				var button = document.querySelector(".play-button[data-trackid='" + trackId + "']");
-				var card = button.closest(".card");
+
+				var card = self.button.closest(".card");
 				card.classList.remove("playing");
 				button.classList.remove("is-playing");
 				console.log("🔥 No track found with ID:", trackId);
@@ -143,6 +146,11 @@ class Player {
 					//self.waveContainer.style.display = "none";
 					// bar.style.display = "block";
 					this.isPlaying = false;
+
+					if (!self.isCard()) {
+						self.skip('next');
+					}
+
 				},
 				onpause: function () {
 					// Stop the wave animation.
@@ -180,6 +188,18 @@ class Player {
 		self.index = index;
 	}
 
+	isCard() {
+		var self = this;
+		self.isAlbum = false;
+
+		// Check if the current track is an album.
+		if (self.button.closest(".card")) {
+			self.isAlbum = true;
+		}
+
+		return self.isAlbum;
+	}
+
 	/**
 	 * Pause the currently playing track.
 	 */
@@ -213,9 +233,28 @@ class Player {
 			if (index >= self.playlist.length) {
 				index = 0;
 			}
+
+			var trackId = self.playlist[index].trackId;
+			const buttons = document.querySelectorAll(".play-button");
+
+			buttons.forEach((element) => {
+				if (element.closest(".track")) {
+					let track = element.closest(".track");
+					track.classList.remove("playing");
+				}
+				element.classList.remove("is-playing");
+			});
+
+			if (self.button.closest(".track").length) {
+				// If the button is inside an album tracklist, remove the playing class from all tracks.
+				self.button.classList.add("is-playing");
+				let track = self.button.closest(".track");
+				track.classList.add("playing");
+				self.play(trackId);
+			}
 		}
 
-		self.skipTo(index);
+		//self.skipTo(index);
 	}
 
 	/**
