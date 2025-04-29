@@ -367,13 +367,23 @@ export default class Index {
 
 				if (!button.hasAttribute('data-trackId')) {
 					button.classList.add("is-disabled");
-					button.closest(".card").classList.add("not-wave");
+
+					if (button.closest(".card")) {
+						button.closest(".card").classList.add("not-wave");
+					}
+
 					button.disabled = true;
 				}
 
 				button.addEventListener("click", (e) => {
 					e.preventDefault();
-					let card = e.target.closest(".card");
+
+					let card = e.target.closest(".album-track");
+					
+					if (e.target.closest(".card")) {
+						card = e.target.closest(".card");
+					}
+
 					let trackId = parseInt(e.target.getAttribute("data-trackId"));
 
 					if (!trackId) {
@@ -382,9 +392,19 @@ export default class Index {
 
 						buttons.forEach((element) => {
 							if (element != e.target) {
-								let _card = element.closest(".card");
-								_card.classList.remove("playing");
+
+								if (element.closest(".card")) {
+									let _card = element.closest(".card");
+									_card.classList.remove("playing");
+								}
+
+								if (element.closest(".album-track")) {
+									let _card = element.closest(".album-track");
+									_card.classList.remove("playing");
+								}
+
 								element.classList.remove("is-playing");
+								
 							}
 						});
 
@@ -398,6 +418,9 @@ export default class Index {
 							this.player.pause();
 						}
 					}
+
+
+					e.stopPropagation();
 				});
 			});
 		}
