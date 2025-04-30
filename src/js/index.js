@@ -427,7 +427,6 @@ export default class Index {
 	initFeaturedArtists = () => {
 
 		const sectionsPlaylists = document.querySelectorAll(".featured-artists");
-
 		const OPTIONS = { align: 'center', loop: true, dragFree: false, dragThreshold: 20 };
 
 		if (sectionsPlaylists) {
@@ -481,8 +480,8 @@ export default class Index {
 	};
 
 	initFeaturedAlbums = () => {
-		const sectionsAlbums = document.querySelectorAll(".featured-albums");
 
+		const sectionsAlbums = document.querySelectorAll(".featured-albums");
 		const OPTIONS = { dragFree: false, align: 'center', loop: false, dragThreshold: 20 };
 
 		if (sectionsAlbums) {
@@ -520,7 +519,6 @@ export default class Index {
 	initFeaturedPlaylists = () => {
 
 		const sectionsPlaylists = document.querySelectorAll(".featured-playlists");
-
 		const OPTIONS = { align: 'center' };
 
 		if (sectionsPlaylists) {

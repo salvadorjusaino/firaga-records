@@ -1,4 +1,5 @@
 import settings from "./Settings.js";
+import { gsap } from "gsap";
 
 class Scroll {
 	constructor() {

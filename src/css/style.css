@@ -2108,7 +2108,8 @@ a:-webkit-any-link {
 	}
 
 	.card:where(.card-artist).playing,
-	.card:where(.card-artist):hover {
+	.card:where(.card-artist):hover,
+	.track .button:hover {
 
 		.card-header,
 		.card-header a {
@@ -2155,7 +2156,8 @@ a:-webkit-any-link {
 	}
 
 	.artist-info .button:hover,
-	.footer-inquiries .button:hover {
+	.footer-inquiries .button:hover,
+	.album-details__button .button:hover {
 
 		.button__flair {
 			background: #1A1A1A;
