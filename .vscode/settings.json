@@ -1,0 +1,29 @@
+{
+	"editor.formatOnSave": false,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"editor.tabSize": 4, // Usa un tamaño de 4 espacios para las tabs
+	"editor.insertSpaces": false, // Usa tabs en vez de espacios
+	"editor.detectIndentation": false, // Desactiva la detección automática de indentación
+	"editor.renderWhitespace": "boundary", // Muestra los espacios y tabs en la vista previa
+	"[html]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false
+	},
+	"[javascript]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false
+	},
+	"[json]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false
+	},
+	"[css]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false
+	},
+	"[typescript]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false
+	}
+}
